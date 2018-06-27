@@ -1,0 +1,16 @@
+<map id="ithitools/lib/DnsStats.h" name="ithitools/lib/DnsStats.h">
+<area shape="rect" id="node2" href="$_capture_summary_8cpp.html" title="ithitools/lib/CaptureSummary.cpp" alt="" coords="5,87,220,114"/>
+<area shape="rect" id="node3" href="$_compute_m34_8cpp.html" title="ithitools/lib/ComputeM34.cpp" alt="" coords="244,87,435,114"/>
+<area shape="rect" id="node4" href="$_compute_m6_8cpp.html" title="ithitools/lib/ComputeM6.cpp" alt="" coords="459,87,643,114"/>
+<area shape="rect" id="node5" href="$_dnscap_plug_in_8cpp.html" title="ithitools/lib/DnscapPlug\lIn.cpp" alt="" coords="668,80,827,121"/>
+<area shape="rect" id="node6" href="$_dns_stats_8cpp.html" title="ithitools/lib/DnsStats.cpp" alt="" coords="851,87,1019,114"/>
+<area shape="rect" id="node7" href="$ithimetrics_8cpp.html" title="ithitools/lib/ithimetrics.cpp" alt="" coords="1043,87,1217,114"/>
+<area shape="rect" id="node8" href="$_m7_getter_8cpp.html" title="ithitools/lib/M7Getter.cpp" alt="" coords="1241,87,1408,114"/>
+<area shape="rect" id="node9" href="$src_2ithitest_8cpp.html" title="ithitools/src/ithitest.cpp" alt="" coords="1433,87,1590,114"/>
+<area shape="rect" id="node10" href="$ithitools_8cpp.html" title="ithitools/src/ithitools.cpp" alt="" coords="1614,87,1777,114"/>
+<area shape="rect" id="node11" href="$_capture_test_8cpp.html" title="ithitools/test/CaptureTest.cpp" alt="" coords="1801,87,1995,114"/>
+<area shape="rect" id="node12" href="$_dns_prefix_test_8cpp.html" title="ithitools/test/DnsPrefix\lTest.cpp" alt="" coords="2019,80,2174,121"/>
+<area shape="rect" id="node13" href="$_get_name_test_8cpp.html" title="ithitools/test/GetNameTest.cpp" alt="" coords="2199,87,2403,114"/>
+<area shape="rect" id="node14" href="$test_rfc6761_8cpp.html" title="ithitools/test/testRfc6761.cpp" alt="" coords="2427,87,2620,114"/>
+<area shape="rect" id="node15" href="$_tld_count_test_8cpp.html" title="ithitools/test/TldCountTest.cpp" alt="" coords="2644,87,2845,114"/>
+</map>
