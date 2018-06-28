@@ -19,7 +19,7 @@
         <table cellpadding=1 border=0 width="100%">
           <tr>
             <td width="10%" class="headerItem">Current view:</td>
-            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">test</a> - PatternTest.cpp<span style="font-size: 80%;"> (source / <a href="PatternTest.cpp.func-sort-c.html">functions</a>)</span></td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">test</a> - PatternTest.cpp<span style="font-size: 80%;"> (source / <a href="PatternTest.cpp.func.html">functions</a>)</span></td>
             <td width="5%"></td>
             <td width="15%"></td>
             <td width="10%" class="headerCovTableHead">Hit</td>
@@ -31,13 +31,13 @@
             <td class="headerValue">ithi.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">40</td>
-            <td class="headerCovTableEntry">51</td>
-            <td class="headerCovTableEntryMed">78.4 %</td>
+            <td class="headerCovTableEntry">46</td>
+            <td class="headerCovTableEntry">57</td>
+            <td class="headerCovTableEntryMed">80.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-06-21 12:11:31</td>
+            <td class="headerValue">2018-06-28</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -419,82 +419,82 @@
 <span class="lineNum">     357 </span>            : };
 <a name="358"><span class="lineNum">     358 </span>            : </a>
 <span class="lineNum">     359 </span>            : 
-<span class="lineNum">     360 </span><span class="lineCov">          1 : PatternTest::PatternTest()</span>
+<span class="lineNum">     360 </span><span class="lineCov">          2 : PatternTest::PatternTest()</span>
 <span class="lineNum">     361 </span>            : {
-<span class="lineNum">     362 </span><span class="lineCov">          1 : }</span>
+<span class="lineNum">     362 </span><span class="lineCov">          2 : }</span>
 <a name="363"><span class="lineNum">     363 </span>            : </a>
 <span class="lineNum">     364 </span>            : 
-<span class="lineNum">     365 </span><span class="lineCov">          2 : PatternTest::~PatternTest()</span>
+<span class="lineNum">     365 </span><span class="lineCov">          4 : PatternTest::~PatternTest()</span>
 <span class="lineNum">     366 </span>            : {
-<a name="367"><span class="lineNum">     367 </span><span class="lineCov">          2 : }</span></a>
+<a name="367"><span class="lineNum">     367 </span><span class="lineCov">          4 : }</span></a>
 <span class="lineNum">     368 </span>            : 
-<span class="lineNum">     369 </span><span class="lineCov">          4 : bool PatternTest::TestOnePattern(char const  ** test_strings,</span>
+<span class="lineNum">     369 </span><span class="lineCov">          8 : bool PatternTest::TestOnePattern(char const  ** test_strings,</span>
 <span class="lineNum">     370 </span>            :     size_t nb_test_strings, uint32_t pattern)
 <span class="lineNum">     371 </span>            : {
-<span class="lineNum">     372 </span><span class="lineCov">          4 :     bool ret = true;</span>
+<span class="lineNum">     372 </span><span class="lineCov">          8 :     bool ret = true;</span>
 <span class="lineNum">     373 </span>            :     uint8_t val[64];
 <span class="lineNum">     374 </span>            :     uint32_t flags;
 <span class="lineNum">     375 </span>            :     size_t len;
 <span class="lineNum">     376 </span>            : 
-<span class="lineNum">     377 </span><span class="lineCov">        326 :     for (size_t i = 0; ret &amp;&amp; i &lt; nb_test_strings; i++)</span>
+<span class="lineNum">     377 </span><span class="lineCov">        652 :     for (size_t i = 0; ret &amp;&amp; i &lt; nb_test_strings; i++)</span>
 <span class="lineNum">     378 </span>            :     {
-<span class="lineNum">     379 </span><span class="lineCov">        322 :         flags = 0;</span>
-<span class="lineNum">     380 </span><span class="lineCov">        322 :         len = strlen(test_strings[i]);</span>
-<span class="lineNum">     381 </span><span class="lineCov">        322 :         if (!NamePattern::Preprocess((uint8_t *)test_strings[i], len, val, &amp;flags))</span>
+<span class="lineNum">     379 </span><span class="lineCov">        644 :         flags = 0;</span>
+<span class="lineNum">     380 </span><span class="lineCov">        644 :         len = strlen(test_strings[i]);</span>
+<span class="lineNum">     381 </span><span class="lineCov">        644 :         if (!NamePattern::Preprocess((uint8_t *)test_strings[i], len, val, &amp;flags))</span>
 <span class="lineNum">     382 </span>            :         {
 <span class="lineNum">     383 </span><span class="lineNoCov">          0 :             ret = false;</span>
 <span class="lineNum">     384 </span>            :         }
-<span class="lineNum">     385 </span><span class="lineCov">        322 :         else if ((flags&amp;pattern) == 0)</span>
+<span class="lineNum">     385 </span><span class="lineCov">        644 :         else if ((flags&amp;pattern) == 0)</span>
 <span class="lineNum">     386 </span>            :         {
 <span class="lineNum">     387 </span><span class="lineNoCov">          0 :             ret = false;</span>
 <span class="lineNum">     388 </span>            :         }
 <span class="lineNum">     389 </span>            :     }
 <span class="lineNum">     390 </span>            : 
-<span class="lineNum">     391 </span><span class="lineCov">          4 :     return ret;</span>
+<span class="lineNum">     391 </span><span class="lineCov">          8 :     return ret;</span>
 <a name="392"><span class="lineNum">     392 </span>            : }</a>
 <span class="lineNum">     393 </span>            : 
-<span class="lineNum">     394 </span><span class="lineCov">          2 : bool PatternTest::TestRandom(char const  ** test_strings,</span>
+<span class="lineNum">     394 </span><span class="lineCov">          4 : bool PatternTest::TestRandom(char const  ** test_strings,</span>
 <span class="lineNum">     395 </span>            :     size_t nb_test_strings, bool is_random)
 <span class="lineNum">     396 </span>            : {
-<span class="lineNum">     397 </span><span class="lineCov">          2 :     bool ret = true;</span>
+<span class="lineNum">     397 </span><span class="lineCov">          4 :     bool ret = true;</span>
 <span class="lineNum">     398 </span>            :     uint8_t val[64];
 <span class="lineNum">     399 </span>            :     uint32_t flags;
 <span class="lineNum">     400 </span>            :     size_t len;
-<span class="lineNum">     401 </span><span class="lineCov">          2 :     uint32_t nb_test = 0;</span>
-<span class="lineNum">     402 </span><span class="lineCov">          2 :     uint32_t nb_fail = 0;</span>
+<span class="lineNum">     401 </span><span class="lineCov">          4 :     uint32_t nb_test = 0;</span>
+<span class="lineNum">     402 </span><span class="lineCov">          4 :     uint32_t nb_fail = 0;</span>
 <span class="lineNum">     403 </span>            : 
-<span class="lineNum">     404 </span><span class="lineCov">        154 :     for (size_t i = 0; ret &amp;&amp; i &lt; nb_test_strings; i++)</span>
+<span class="lineNum">     404 </span><span class="lineCov">        308 :     for (size_t i = 0; ret &amp;&amp; i &lt; nb_test_strings; i++)</span>
 <span class="lineNum">     405 </span>            :     {
-<span class="lineNum">     406 </span><span class="lineCov">        152 :         flags = 0;</span>
-<span class="lineNum">     407 </span><span class="lineCov">        152 :         len = strlen(test_strings[i]);</span>
-<span class="lineNum">     408 </span><span class="lineCov">        152 :         if (len &lt; 6)</span>
+<span class="lineNum">     406 </span><span class="lineCov">        304 :         flags = 0;</span>
+<span class="lineNum">     407 </span><span class="lineCov">        304 :         len = strlen(test_strings[i]);</span>
+<span class="lineNum">     408 </span><span class="lineCov">        304 :         if (len &lt; 6)</span>
 <span class="lineNum">     409 </span>            :         {
-<span class="lineNum">     410 </span><span class="lineCov">         23 :             continue;</span>
+<span class="lineNum">     410 </span><span class="lineCov">         46 :             continue;</span>
 <span class="lineNum">     411 </span>            :         }
 <span class="lineNum">     412 </span>            : 
-<span class="lineNum">     413 </span><span class="lineCov">        129 :         nb_test++;</span>
+<span class="lineNum">     413 </span><span class="lineCov">        258 :         nb_test++;</span>
 <span class="lineNum">     414 </span>            : 
-<span class="lineNum">     415 </span><span class="lineCov">        129 :         if (!NamePattern::Preprocess((uint8_t *)test_strings[i], len, val, &amp;flags))</span>
+<span class="lineNum">     415 </span><span class="lineCov">        258 :         if (!NamePattern::Preprocess((uint8_t *)test_strings[i], len, val, &amp;flags))</span>
 <span class="lineNum">     416 </span>            :         {
 <span class="lineNum">     417 </span><span class="lineNoCov">          0 :             ret = false;</span>
 <span class="lineNum">     418 </span>            :         }
-<span class="lineNum">     419 </span><span class="lineCov">        129 :         else if ((flags&amp;name_pattern_alpha) == 0)</span>
+<span class="lineNum">     419 </span><span class="lineCov">        258 :         else if ((flags&amp;name_pattern_alpha) == 0)</span>
 <span class="lineNum">     420 </span>            :         {
 <span class="lineNum">     421 </span><span class="lineNoCov">          0 :             ret = false;</span>
 <span class="lineNum">     422 </span>            :         }
 <span class="lineNum">     423 </span>            :         else
 <span class="lineNum">     424 </span>            :         {
-<span class="lineNum">     425 </span><span class="lineCov">        129 :             bool test_random = NamePattern::CheckAlphaRandom(val, len);</span>
+<span class="lineNum">     425 </span><span class="lineCov">        258 :             bool test_random = NamePattern::CheckAlphaRandom(val, len);</span>
 <span class="lineNum">     426 </span>            : 
-<span class="lineNum">     427 </span><span class="lineCov">        246 :             if ((test_random &amp;&amp; (!is_random)) ||</span>
-<span class="lineNum">     428 </span><span class="lineCov">        140 :                 ((!test_random) &amp;&amp; is_random))</span>
+<span class="lineNum">     427 </span><span class="lineCov">        508 :             if ((test_random &amp;&amp; (!is_random)) ||</span>
+<span class="lineNum">     428 </span><span class="lineCov">        328 :                 ((!test_random) &amp;&amp; is_random))</span>
 <span class="lineNum">     429 </span>            :             {
-<span class="lineNum">     430 </span><span class="lineCov">         17 :                 nb_fail++;</span>
+<span class="lineNum">     430 </span><span class="lineCov">         34 :                 nb_fail++;</span>
 <span class="lineNum">     431 </span>            :             }
 <span class="lineNum">     432 </span>            :         }
 <span class="lineNum">     433 </span>            :     }
 <span class="lineNum">     434 </span>            : 
-<span class="lineNum">     435 </span><span class="lineCov">          2 :     if (ret)</span>
+<span class="lineNum">     435 </span><span class="lineCov">          4 :     if (ret)</span>
 <span class="lineNum">     436 </span>            :     {
 <span class="lineNum">     437 </span>            :         /* Note that this test is *very* lenient. We do not
 <span class="lineNum">     438 </span>            :            have in fact a good classifier, and it tends to classify
@@ -503,56 +503,56 @@
 <span class="lineNum">     441 </span>            :            This test will be revisited when at a later time we
 <span class="lineNum">     442 </span>            :            get a better classifier. */
 <span class="lineNum">     443 </span>            : 
-<span class="lineNum">     444 </span><span class="lineCov">          2 :         if (nb_fail * 25 &gt; nb_test * 10)</span>
+<span class="lineNum">     444 </span><span class="lineCov">          4 :         if (nb_fail * 25 &gt; nb_test * 10)</span>
 <span class="lineNum">     445 </span>            :         {
 <span class="lineNum">     446 </span><span class="lineNoCov">          0 :             ret = false;</span>
 <span class="lineNum">     447 </span>            :         }
 <span class="lineNum">     448 </span>            :     }
 <span class="lineNum">     449 </span>            : 
-<span class="lineNum">     450 </span><span class="lineCov">          2 :     return ret;</span>
+<span class="lineNum">     450 </span><span class="lineCov">          4 :     return ret;</span>
 <a name="451"><span class="lineNum">     451 </span>            : }</a>
 <span class="lineNum">     452 </span>            : 
-<span class="lineNum">     453 </span><span class="lineCov">          1 : bool PatternTest::DoTest()</span>
+<span class="lineNum">     453 </span><span class="lineCov">          2 : bool PatternTest::DoTest()</span>
 <span class="lineNum">     454 </span>            : {
-<span class="lineNum">     455 </span><span class="lineCov">          1 :     bool ret = true;</span>
+<span class="lineNum">     455 </span><span class="lineCov">          2 :     bool ret = true;</span>
 <span class="lineNum">     456 </span>            : 
-<span class="lineNum">     457 </span><span class="lineCov">          1 :     if (!TestOnePattern(alpha_test_strings, </span>
+<span class="lineNum">     457 </span><span class="lineCov">          2 :     if (!TestOnePattern(alpha_test_strings, </span>
 <span class="lineNum">     458 </span>            :         sizeof(alpha_test_strings) / sizeof(char const *),
-<span class="lineNum">     459 </span>            :         name_pattern_alpha))
+<span class="lineNum">     459 </span><span class="lineCov">          2 :         name_pattern_alpha))</span>
 <span class="lineNum">     460 </span>            :     {
 <span class="lineNum">     461 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     462 </span>            :     }
-<span class="lineNum">     463 </span><span class="lineCov">          1 :     else if (!TestOnePattern(dga_test_strings, </span>
+<span class="lineNum">     463 </span><span class="lineCov">          2 :     else if (!TestOnePattern(dga_test_strings, </span>
 <span class="lineNum">     464 </span>            :         sizeof(dga_test_strings) / sizeof(char const *),
-<span class="lineNum">     465 </span>            :         name_pattern_alpha))
+<span class="lineNum">     465 </span><span class="lineCov">          2 :         name_pattern_alpha))</span>
 <span class="lineNum">     466 </span>            :     {
 <span class="lineNum">     467 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     468 </span>            :     }
-<span class="lineNum">     469 </span><span class="lineCov">          1 :     else if (!TestOnePattern(hexa_test_strings,</span>
+<span class="lineNum">     469 </span><span class="lineCov">          2 :     else if (!TestOnePattern(hexa_test_strings,</span>
 <span class="lineNum">     470 </span>            :         sizeof(hexa_test_strings) / sizeof(char const *),
-<span class="lineNum">     471 </span>            :         name_pattern_hexa))
+<span class="lineNum">     471 </span><span class="lineCov">          2 :         name_pattern_hexa))</span>
 <span class="lineNum">     472 </span>            :     {
 <span class="lineNum">     473 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     474 </span>            :     }
-<span class="lineNum">     475 </span><span class="lineCov">          1 :     else if (!TestOnePattern(num_test_strings,</span>
+<span class="lineNum">     475 </span><span class="lineCov">          2 :     else if (!TestOnePattern(num_test_strings,</span>
 <span class="lineNum">     476 </span>            :         sizeof(num_test_strings) / sizeof(char const *),
-<span class="lineNum">     477 </span>            :         name_pattern_num))
+<span class="lineNum">     477 </span><span class="lineCov">          2 :         name_pattern_num))</span>
 <span class="lineNum">     478 </span>            :     {
 <span class="lineNum">     479 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     480 </span>            :     }
-<span class="lineNum">     481 </span><span class="lineCov">          1 :     else if(!TestRandom(alpha_test_strings,</span>
+<span class="lineNum">     481 </span><span class="lineCov">          2 :     else if(!TestRandom(alpha_test_strings,</span>
 <span class="lineNum">     482 </span>            :         sizeof(alpha_test_strings) / sizeof(char const *),
-<span class="lineNum">     483 </span>            :         false))
+<span class="lineNum">     483 </span><span class="lineCov">          2 :         false))</span>
 <span class="lineNum">     484 </span>            :     {
 <span class="lineNum">     485 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     486 </span>            :     }
-<span class="lineNum">     487 </span><span class="lineCov">          1 :     else if (!TestRandom(dga_test_strings,</span>
+<span class="lineNum">     487 </span><span class="lineCov">          2 :     else if (!TestRandom(dga_test_strings,</span>
 <span class="lineNum">     488 </span>            :         sizeof(dga_test_strings) / sizeof(char const *),
-<span class="lineNum">     489 </span>            :         true))
+<span class="lineNum">     489 </span><span class="lineCov">          2 :         true))</span>
 <span class="lineNum">     490 </span>            :     {
 <span class="lineNum">     491 </span><span class="lineNoCov">          0 :         ret = false;</span>
 <span class="lineNum">     492 </span>            :     }
-<span class="lineNum">     493 </span><span class="lineCov">          1 :     return ret;</span>
+<span class="lineNum">     493 </span><span class="lineCov">          2 :     return ret;</span>
 <span class="lineNum">     494 </span>            : }
 </pre>
       </td>
@@ -562,7 +562,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.10</a></td></tr>
   </table>
   <br>
 

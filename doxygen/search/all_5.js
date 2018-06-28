@@ -11,5 +11,5 @@ var searchData=
   ['exportleakeddomains',['ExportLeakedDomains',['../class_dns_stats.html#a18ff6ef244a2fbc3aa30ec8e9783930f',1,'DnsStats']]],
   ['exportstringusage',['ExportStringUsage',['../class_dns_stats.html#a14e4d1a2117fde4594ac61989850f3b6',1,'DnsStats']]],
   ['exporttocapturesummary',['ExportToCaptureSummary',['../class_dns_stats.html#a848a1259d9a85c23b0f4f5d4e3f4cc49',1,'DnsStats']]],
-  ['extract',['Extract',['../class_capture_summary.html#ab1b73031f56a9d650180ad068d3407eb',1,'CaptureSummary']]]
+  ['extract',['Extract',['../class_capture_summary.html#ac39888aa1d4334ddce2ee31bf0401bf1',1,'CaptureSummary']]]
 ];
