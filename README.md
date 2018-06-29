@@ -1,4 +1,4 @@
-- <sub>[scroll down to code analysis reports](#code-analysis-reports)</sub>
+<sup>[scroll down to code analysis reports](#code-analysis-reports)</sup>
 
 # ITHITOOLS
 
