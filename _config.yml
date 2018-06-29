@@ -1,5 +1,4 @@
 theme: jekyll-theme-cayman
-hopsakidee: [ 1 , 2 , 3 ]
 include:
   - doxygen/_save_test_8h.html
   - doxygen/_csv_helper_8h.html
